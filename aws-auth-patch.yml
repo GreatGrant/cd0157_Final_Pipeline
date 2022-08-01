@@ -1,0 +1,15 @@
+apiVersion: v1
+data:
+  mapRoles: |
+    - groups:
+      - system:bootstrappers
+      - system:nodes
+      rolearn: arn:aws:iam::717224861897:role/eksctl-eksctl-dems-nodegroup-ng-5-NodeInstanceRole-66RYWSG43TY1
+      username: build
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2022-08-01T09:42:26Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "6871"
+  uid: eb1d652c-4a99-42d0-9118-115c1874570f
